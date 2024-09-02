@@ -12,7 +12,7 @@ let public_id
 async function uploadImage() {
   try {
     const uploadResult = await cloudinary.uploader.upload(
-      "/Users/zacharygould/Documents/training-fundamentals-for-developers-master/assets/images/giraffe.jpg",
+      "https://res.cloudinary.com/ziggydev/image/upload/v1666684829/giraffe.jpg",
       { detection: "captioning" }
     );
     caption = uploadResult.info.detection.captioning.data;
